@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background2">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="161dp" />
+
+    <com.jetradarmobile.snowfall.SnowfallView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:snowflakesNum="150"
+        app:snowflakeAlphaMin="150"
+        app:snowflakeAlphaMax="255"
+        app:snowflakeAngleMax="5"
+        app:snowflakeSizeMin="15dp"
+        app:snowflakeSizeMax="32dp"
+        app:snowflakeSpeedMin="8"
+        app:snowflakeSpeedMax="15"
+        app:snowflakesFadingEnabled="true"
+        app:snowflakesAlreadyFalling="false"
+        app:snowflakeImage="@drawable/love"/>
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/btn_background"
+        android:onClick="previousClick"
+        android:textColor="#4ae209"
+        android:text="Previous" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/bt1"
+        android:layout_alignBottom="@+id/bt1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/btn_background"
+        android:onClick="nextClick"
+        android:textColor="#4ae209"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textColor="#4ae209"
+        android:background="@drawable/btn_background"
+        android:text="ေနာက္တစ္မ်က္ႏွာသို႔" />
+
+
+</RelativeLayout>
+
+
